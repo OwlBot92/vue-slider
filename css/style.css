@@ -19,22 +19,22 @@
 }
 img{
     width: 100%;
+    /* ho dato un'altezza fissa per uniformare le immagini */
     height: 550px;
 }
-.immagine{
+.container-immagine{
     position: relative;
     width: 60%;
 
 }
 .circles{
-    padding: 10px 20px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    position: absolute;
+    padding: 10px 20px;
     background-color: rgb(0, 0, 0, .6);
-    
     border-radius: 50px;
+    position: absolute;
     bottom: 5%;
     left: 50%;
     transform: translateX(-50%) ;
@@ -49,4 +49,17 @@ img{
 }
 .circle.active{
     background-color: blue;
+}
+
+.bg1{
+    background-color: #83acfc;
+}
+.bg2{
+    background-color: #708304;
+}
+.bg3{
+    background-color: #d19c7b;
+}
+.bg4{
+    background-color: #005a8e;
 }

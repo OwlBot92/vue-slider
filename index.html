@@ -14,32 +14,28 @@
     </head>
 
     <body>
-
         <!-- VUE ROOT -->
         <div id="root">
-            
             <!-- slider -->
-            <div class="slider">
-                <div class="slider-arrow" v-on:click="leftClick"> 
+            <div class="slider" v-bind:class="bgClasses[activeImgIndex]">
+                <!-- freccia sinistra -->
+                <div class="slider-arrow" v-on:click="leftClick()">
                     <i class="fas fa-chevron-left"></i>
                 </div>
-    
-                <div class="immagine">
+                <!-- immagine -->
+                <div class="container-immagine">
                     <img v-bind:src="images[activeImgIndex]" alt="">
                     <div class="circles">
-                        <div v-for="(img,index) in images" class="circle" v-bind:class="{active: index == activeImgIndex}"></div>
-                        
+                        <div v-for="(img,index) in images" class="circle"
+                            v-bind:class="{active: index == activeImgIndex}"></div>
                     </div>
                 </div>
-    
-                <div class="slider-arrow" v-on:click="rightClick">
+                <!-- freccia destra -->
+                <div class="slider-arrow" v-on:click="rightClick()">
                     <i class="fas fa-chevron-right"></i>
                 </div>
             </div>
-
-            
         </div>
-
         <script src="js/script.js"></script>
     </body>
 

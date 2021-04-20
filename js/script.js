@@ -9,6 +9,12 @@ var app = new Vue({
             "img/cascate.webp",
             "img/fiori.jpeg",
             "img/montagne.webp"
+        ],
+        bgClasses: [
+            "bg1",
+            "bg2",
+            "bg3",
+            "bg4"
         ]
     },
     //funzioni per scorrere le immagini
@@ -18,7 +24,7 @@ var app = new Vue({
         },
         rightClick(){
             (this.activeImgIndex >= this.images.length-1) ? this.activeImgIndex = 0 : this.activeImgIndex++;
-        }
+        },
     },
     //ogni 3 secondi chiama la funzione rightClick per far scorrere le immagini
     created(){
