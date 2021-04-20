@@ -10,12 +10,8 @@ var app = new Vue({
             "img/fiori.jpeg",
             "img/montagne.webp"
         ],
-        bgClasses: [
-            "bg1",
-            "bg2",
-            "bg3",
-            "bg4"
-        ]
+        //array di classi 
+        bgClasses: ["bg1", "bg2", "bg3", "bg4"]
     },
     //funzioni per scorrere le immagini
     methods:{        
