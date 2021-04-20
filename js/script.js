@@ -3,6 +3,7 @@ var app = new Vue({
     el: '#root',
     data: {
         activeImgIndex: 0,
+        //array che contiene il path delle immagini da caricare
         images: [
             "img/campagna.jpg",
             "img/cascate.webp",
@@ -10,6 +11,7 @@ var app = new Vue({
             "img/montagne.webp"
         ]
     },
+    //funzioni per scorrere le immagini
     methods:{        
         leftClick(){
             (this.activeImgIndex <= 0) ? this.activeImgIndex = this.images.length-1 : this.activeImgIndex--;
@@ -18,6 +20,7 @@ var app = new Vue({
             (this.activeImgIndex >= this.images.length-1) ? this.activeImgIndex = 0 : this.activeImgIndex++;
         }
     },
+    //ogni 3 secondi chiama la funzione rightClick per far scorrere le immagini
     created(){
         setInterval(() => this.rightClick(), 3000);
     }
