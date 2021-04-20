@@ -8,7 +8,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
     height: 100vh;
 }
 .fa-chevron-left,
@@ -24,9 +23,9 @@ img{
     height: 550px;
 }
 .container-immagine{
+    max-width: 800px;
+    min-width: 800px;
     position: relative;
-    width: 60%;
-
 }
 .circles{
     display: flex;
