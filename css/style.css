@@ -19,6 +19,7 @@
 }
 img{
     width: 100%;
+    border: 5px solid black;
     /* ho dato un'altezza fissa per uniformare le immagini */
     height: 550px;
 }
