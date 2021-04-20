@@ -19,8 +19,6 @@ var app = new Vue({
         }
     },
     created(){
-        setInterval(() => { 
-            this.rightClick();
-        }, 3000);
+        setInterval(() => this.rightClick(), 3000);
     }
 })
